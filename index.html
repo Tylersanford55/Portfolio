@@ -5,50 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font imports from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Streetwear&display=swap" rel="stylesheet">
+
 </head>
-<body>
+<body style="font-family: 'Roboto', sans-serif;">
 
     <header>
         <div class="container">
-            <h1>Tyler Sanford </h1>
+            <h1>Tyler Sanford</h1>
             <nav>
                 <ul>
                     <li><a href="#about">About Me</a></li>
-                    <li><a href="#work">My Work</a></li>
+                    <li><a href="#projects">My Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="about">
+    <div class="profile-pic-container">
+        <img src="assets/images/profile pic.jpeg" alt="Tyler's Profile pic" class="profile-pic">
+    </div>
+
+    <section id="about" class="section-container">
         <div class="container">
             <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget varius sapien.</p>
+            <p>Hello! My name is Tyler Sanford, and I've always been fascinated by the endless possibilities that technology offers. From software development to data analysis, the tech field never ceases to amaze me with its innovation and creativity. </p>
+
+            <p>Currently, I'm enrolled in a bootcamp program at the University of Utah, where I'm diving deep into the world of programming and technology. I've been thoroughly enjoying the hands-on learning experience and the opportunity to collaborate with like-minded individuals who share my passion for tech.</p>
+            
+            <p>I'm excited about the prospects that this bootcamp offers for my future career. With each challenge and project, I'm not only honing my technical skills but also gaining valuable insights into problem-solving and critical thinking.</p>
+            
+            <p>I'm eager to see where this journey takes me and am looking forward to embracing the future challenges and opportunities that come my way in the tech industry.</p>
+            
         </div>
     </section>
 
-    <section id="work">
+    <section id="projects">
         <div class="container">
-            <h2>My Work</h2>
+            <h2>My Projects</h2>
             <div class="work-item">
-                <img src="placeholder.jpg" alt="Project 1">
+                <img src="assets/images/coming-soon.png" alt="Project 1">
                 <p>Project 1 Description</p>
             </div>
             <div class="work-item">
-                <img src="placeholder.jpg" alt="Project 2">
+                <img src="assets/images/coming-soon.png" alt="Project 2">
                 <p>Project 2 Description</p>
             </div>
             <!-- more work items as needed -->
         </div>
     </section>
+    
 
     <section id="contact">
         <div class="container">
             <h2>Contact Me</h2>
-            <p>Email: Tylersanford1997@gmail.com</p>
+            <div class="contact-icons">
+                <div class="contact-icon">
+                    <a href="https://www.linkedin.com/in/tyler-sanford-2b8b08143/" target="_blank">
+                        <img src="assets/images/linkedin pic.png" alt="LinkedIn Profile" width="100" height="100">
+                    </a>
+                </div>
+                <div class="contact-icon">
+                    <a href="mailto:tylersanford1997@gmail.com">
+                        <img src="assets/images/gmail logo.png" alt="Email" width="100" height="100">
+                    </a>
+                </div>
+                <div class="contact-icon">
+                    <a href="https://github.com/Tylersanford55">
+                        <img src="assets/images/github logo.png" alt="GitHub" width="100" height="100">
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
+    
+    
 
     <footer>
         
