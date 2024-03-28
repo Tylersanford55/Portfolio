@@ -104,7 +104,10 @@ footer {
 .profile-pic {
     width: 10%;
     height: auto;
+    border-radius: 50%; 
+    border: 3px solid #fff; 
 }
+
 
 .contact-icons {
     display: flex;
