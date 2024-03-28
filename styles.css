@@ -45,6 +45,12 @@ header nav ul li {
 header nav ul li a {
     color: #fff;
     text-decoration: none;
+    transition: border-bottom 0.3s ease; /* Transition for smooth effect */
+}
+
+/* Adding underline on hover */
+header nav ul li a:hover {
+    border-bottom: 2px solid #fff;
 }
 
 /* Section Styles */
@@ -63,16 +69,45 @@ section {
 .work-item {
     margin-bottom: 40px;
     text-align: center; 
+    position: relative; /* Positioning for overlay */
+    overflow: hidden; /* Hide overflow for overlay */
+    border: 2px solid transparent; /* Initial border */
+    transition: border-color 0.3s ease; /* Transition for smooth effect */
+}
+
+.work-item:hover {
+    border-color: black; /* Border color on hover */
 }
 
 .work-item img {
     width: 50%; 
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: filter 0.3s ease; /* Transition for smooth effect */
 }
 
-.work-item p {
-    margin-top: 10px;
+.work-item:hover img {
+    filter: blur(5px); /* Apply blur effect on hover */
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* Overlay color with transparency */
+    padding: 10px; /* Padding for text */
+    transition: background-color 0.3s ease; /* Transition for smooth effect */
+}
+
+.work-item:hover .overlay {
+    background-color: rgba(255, 255, 255, 0.8); /* Adjusted transparency on hover */
+}
+
+/* Text Styles */
+.overlay p {
+    color: #333;
+    font-weight: bold;
 }
 
 /* Footer Styles */
@@ -115,6 +150,16 @@ footer {
     margin: 0 10px; 
 }
 
+/* Adding border and hover effect to contact icons */
+.contact-icon img {
+    border: 2px solid transparent; /* Initial border */
+    transition: border-color 0.3s ease; /* Transition for smooth effect */
+}
+
+.contact-icon img:hover {
+    border-color: black; /* Border color on hover */
+}
+
 /* Responsive Container */
 @media screen and (max-width: 768px) {
     .container {
@@ -143,10 +188,4 @@ footer {
     .work-item img {
         width: 100%; /* Adjusted width for smaller screens */
     }
-}
-
-/* Centering "Contact Me" and "My Projects" headers */
-#contact h2,
-#projects h2 {
-    text-align: center;
 }
