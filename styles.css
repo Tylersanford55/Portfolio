@@ -28,15 +28,13 @@ header .container {
 header h1 {
     font-size: 34px;
     font-weight: bold;
-    color: #333;
+    color: #fff;
     font-family: 'Streetwear', cursive;
+    margin-left: 20px; /* Adjusted margin for spacing */
 }
 
 header nav ul {
     list-style: none;
-    font-family: 'Streetwear', cursive;
-    font-weight: bold;
-    color: #333;
 }
 
 header nav ul li {
@@ -52,6 +50,7 @@ header nav ul li a {
 /* Section Styles */
 section {
     padding: 50px 0;
+    text-align: center; /* Centering section content */
 }
 
 .container {
@@ -102,12 +101,10 @@ footer {
 }
 
 .profile-pic {
-    width: 10%;
-    height: auto;
-    border-radius: 50%; 
-    border: 3px solid #fff; 
+    width: 150px; /* Adjusted width */
+    height: 150px; /* Adjusted height */
+    border-radius: 50%; /* Circular border */
 }
-
 
 .contact-icons {
     display: flex;
@@ -119,12 +116,37 @@ footer {
 }
 
 /* Responsive Container */
-#about, #projects, #contact {
-    text-align: center;
-    margin: 0 auto;
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 10px; /* Adjusted padding for smaller screens */
+    }
+
+    header {
+        padding: 10px 0; /* Adjusted padding for smaller screens */
+    }
+
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        margin-left: 0; /* Centering the h1 on smaller screens */
+        margin-bottom: 20px; /* Added margin for spacing */
+    }
+
+    header nav ul li {
+        display: block;
+        margin-bottom: 10px; /* Added margin for spacing */
+    }
+
+    .work-item img {
+        width: 100%; /* Adjusted width for smaller screens */
+    }
 }
 
-.container {
-    max-width: 800px; 
-    margin: 0 auto;
+/* Centering "Contact Me" and "My Projects" headers */
+#contact h2,
+#projects h2 {
+    text-align: center;
 }
