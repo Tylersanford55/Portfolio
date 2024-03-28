@@ -1,17 +1,18 @@
-
+/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
+/* Base Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     line-height: 1.6;
 }
 
+/* Header Styles */
 header {
     background-color: #21818c;
     color: #fff;
@@ -48,7 +49,7 @@ header nav ul li a {
     text-decoration: none;
 }
 
-
+/* Section Styles */
 section {
     padding: 50px 0;
 }
@@ -59,7 +60,7 @@ section {
     padding: 0 20px;
 }
 
-
+/* Work Item Styles */
 .work-item {
     margin-bottom: 40px;
     text-align: center; 
@@ -71,12 +72,11 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-
 .work-item p {
     margin-top: 10px;
 }
 
-
+/* Footer Styles */
 footer {
     background-color: #333;
     color: #fff;
@@ -84,13 +84,12 @@ footer {
     padding: 20px 0;
 }
 
-
+/* About Section Styles */
 #about {
     background-color: #5d5d5d4f;
     padding: 20px;
     margin-top: 20px;
 }
-
 
 #about p {
     margin-bottom: 20px;
@@ -100,14 +99,13 @@ footer {
 .profile-pic-container {
     text-align: center;
     margin-top: 20px;
-   
 }
 
 .profile-pic {
     width: 10%;
     height: auto;
-    
 }
+
 .contact-icons {
     display: flex;
     justify-content: center;
@@ -116,11 +114,12 @@ footer {
 .contact-icon {
     margin: 0 10px; 
 }
+
+/* Responsive Container */
 #about, #projects, #contact {
     text-align: center;
     margin: 0 auto;
 }
-
 
 .container {
     max-width: 800px; 
